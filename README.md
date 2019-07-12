@@ -49,6 +49,9 @@ For the actual TTT functionality, the test suite is pretty opinionated. We've gi
   + When you name your save and previous functions, make sure to call them something like `saveGame()` and `previousGames()`. If you call them `save()` and `previous()` you may run into problems with the test suite.
 
 ## Testing
+
+**Note:** Use `var` instead of `let` or `const` when defining variables in this lab. Due to compiler bugs, tests will fail to recognize working code.
+
 You can run the test suite in one of two ways:
 1. With Node (in your terminal) by running the `learn` or `npm test` command.
 2. In the browser by opening up `test/fixtures/index-test.html` in your browser, opening the JS console, and invoking the `mocha.run()` method. Note that, on subsequent tests, you should refresh the page each time before invoking `mocha.run()`.
